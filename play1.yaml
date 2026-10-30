@@ -12,7 +12,7 @@
       
       - name: Installing webserver
         ansible.builtin.dnf:
-        name: "nginx"
-        state: present
+          name: "nginx"
+          state: present
     
       
