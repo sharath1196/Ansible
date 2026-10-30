@@ -1,4 +1,5 @@
 - name: Pinging the frontend
+  become: true
   hosts: frontend
   tasks:
       - name: Ping the server
