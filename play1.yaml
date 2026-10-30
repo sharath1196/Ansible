@@ -3,5 +3,10 @@
   tasks:
       - name: Ping the server
         ansible.builtin.ping:
+
+      - name: Updating the package
+        ansible.builtin.dnf:
+          name: "*"
+          state: latest
     
       
