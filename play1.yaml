@@ -9,5 +9,10 @@
         ansible.builtin.dnf:
           name: "*"
           state: latest
+      
+      - name: Installing webserver
+        ansible.builtin.dnf:
+        name: "nginx"
+        state: present
     
       
